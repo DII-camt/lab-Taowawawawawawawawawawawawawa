@@ -1,0 +1,120 @@
+.round-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.round-button:hover {
+    animation-name: button;
+    animation-duration: 2s;
+}
+
+@keyframes button {
+    from {
+        background-color: #007BFF;
+
+    }
+
+    to {
+        background-color: #ff0000;
+
+    }
+}
+
+@media screen and (max-height:600px) {
+    .round-button {
+        border-radius: 0px;
+    }
+
+}
+
+.container>p{
+    
+        color: #ff0000;
+    
+}
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.left { grid-area: left; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+.grid-container {
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'menu main main main main main'
+'menu left left left right right'
+'footer footer footer footer footer footer'; 
+
+gap: 10px;
+background-color: red;
+padding: 10px;
+}
+.grid-container > div {
+background-color: #f0f0f0;
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+
+
+
+.table1 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+    }
+    .table1-item {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+    .flex1 {
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: row-reverse;
+        .item {
+            background-color: #ff0000;
+            margin: 10px;
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+
+    .flex2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        background-color: DodgerBlue;
+        flex-direction: row;
+        .item {
+            background-color: #f0f0f0;
+            margin: 10px;
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+
+    .flex-container{
+        background-color: #007BFF;
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container>div{
+        background-color: #f0f0f0;
+        height: 100px;
+        width: 100px;
+    }
